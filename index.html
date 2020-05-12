@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.color-2.1.2.min.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Rock Paper Sicisors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Sicisors</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row"> <!-- BUTTONS FOR PLAY -->
+                <div class="col-4">
+                    <div class="row">
+                        <button id="rock" class="btn btn-outline-primary">Rock</button>
+                    </div>
+                    <div class="row">
+                        <button id="paper" class="btn btn-outline-primary">Paper</button>
+                    </div>
+                    <div class="row">
+                        <button id="sicisors" class="btn btn-outline-primary">Sicisors</button>
+                    </div>
+                </div>
+                <div class="col board-game"> <!-- BOARD GAME -->
+                    <div class="row">
+                        <div class="col-">
+                            <!-- <h2>Your Hand</h2> -->
+                            <img id="player" src="" alt="">
+                        </div>
+                        <div class="col-">
+                            <!-- <h2>Comp Hand</h2> -->
+                            <img id="computer" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">   <!-- PROGRESS BAR -->
+                <div class="bar">
+                    <div class="bar-progress"><span>0%</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">   <!-- TABLE WITH RESULTS -->
+                <table class="table table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nr</th>
+                            <th scope="col">Moves</th>
+                            <th scope="col">Result</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">1</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">2</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">3</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">4</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">5</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">6</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                        <tr>
+                            <th scope="col">7</th>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                            <td scope="col"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

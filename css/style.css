@@ -1,0 +1,339 @@
+body {
+  background-color: lightblue;
+}
+
+body header {
+  background-color: whitesmoke;
+}
+
+body header h1 {
+  padding: 20px 0;
+  -webkit-box-shadow: 0 4px 20px lightgray;
+          box-shadow: 0 4px 20px lightgray;
+  text-align: center;
+  text-shadow: 4px 4px 4px black;
+  color: white;
+}
+
+body main .container {
+  margin-top: 50px;
+}
+
+body main .container:first-of-type .row:first-of-type {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .container:first-of-type .board-game .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .container:first-of-type button {
+  margin: calc(4px + 0.4vw) auto;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 6px lightslategray;
+          box-shadow: 2px 2px 6px lightslategray;
+  -webkit-transform: translateX(0px) translateY(0px);
+          transform: translateX(0px) translateY(0px);
+  scale: 1;
+  width: calc(80px + 4vw);
+  font-size: calc(12px + 0.4vw);
+  -webkit-animation: unhover-button 1 .2s;
+          animation: unhover-button 1 .2s;
+}
+
+body main .container:first-of-type button:hover {
+  background-color: #007bff;
+  -webkit-box-shadow: 4px 3px 8px #424242;
+          box-shadow: 4px 3px 8px #424242;
+  -webkit-transform: translateX(-4px) translateY(-2px);
+          transform: translateX(-4px) translateY(-2px);
+  scale: 1.05;
+  -webkit-animation: hover-button 1 .2s;
+          animation: hover-button 1 .2s;
+}
+
+body main .container:first-of-type img {
+  width: calc(50px + 10vw);
+  height: calc(50px + 10vw);
+  -webkit-box-shadow: 2px 2px 6px lightslategray;
+          box-shadow: 2px 2px 6px lightslategray;
+  -webkit-transform: translateX(0px) translateY(0px);
+          transform: translateX(0px) translateY(0px);
+  scale: 1.02;
+  background-color: whitesmoke;
+  -webkit-animation: unhover-box 1 .2s;
+          animation: unhover-box 1 .2s;
+}
+
+body main .container:first-of-type img:hover {
+  -webkit-box-shadow: 4px 4px 10px #424242;
+          box-shadow: 4px 4px 10px #424242;
+  -webkit-transform: translateX(-6px) translateY(-3px);
+          transform: translateX(-6px) translateY(-3px);
+  scale: 1.02;
+  -webkit-animation: hover-box 1 .2s;
+          animation: hover-box 1 .2s;
+}
+
+body main .container:first-of-type h2 {
+  text-align: center;
+  font-size: 10px;
+  width: 50%;
+}
+
+#adding-points {
+  position: absolute;
+  left: 45%;
+  color: #43b600;
+  font-size: calc(10px + 1vw);
+  text-align: center;
+}
+
+#removing-points {
+  position: absolute;
+  left: 45%;
+  font-size: calc(10px + 1vw);
+  color: #e00000;
+}
+
+.bar {
+  margin: 0 1% -20px;
+  border: 1px solid rgba(0, 0, 0, 0.418);
+  -webkit-box-shadow: 0 0 3px;
+          box-shadow: 0 0 3px;
+  background-color: #e9ecef;
+  height: 40px;
+  width: 100%;
+}
+
+.bar .bar-progress {
+  margin: 0 auto;
+  background-color: lightskyblue;
+  -webkit-box-shadow: 0 0 3px;
+          box-shadow: 0 0 3px;
+  width: 1px;
+  height: 38px;
+}
+
+.bar .bar-progress span {
+  position: absolute;
+  left: 50%;
+  color: black;
+  font-weight: 100;
+  margin-top: 4px;
+}
+
+.blink-red {
+  -webkit-animation: blink infinite .4s ease-out;
+          animation: blink infinite .4s ease-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.overlay button {
+  position: absolute;
+  top: 45%;
+  left: calc(-80px + 50vw);
+  margin: 0 auto;
+  width: 160px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 6px lightslategray;
+          box-shadow: 2px 2px 6px lightslategray;
+  -webkit-transform: translateX(0px) translateY(0px);
+          transform: translateX(0px) translateY(0px);
+  scale: 1;
+  font-size: calc(12px + 0.4vw);
+  -webkit-animation: unhover-button 1 .2s;
+          animation: unhover-button 1 .2s;
+}
+
+.overlay button:hover {
+  background-color: #007bff;
+  -webkit-box-shadow: 4px 3px 8px #424242;
+          box-shadow: 4px 3px 8px #424242;
+  -webkit-transform: translateX(-4px) translateY(-2px);
+          transform: translateX(-4px) translateY(-2px);
+  scale: 1.05;
+  -webkit-animation: hover-button 1 .2s;
+          animation: hover-button 1 .2s;
+}
+
+.overlay h2 {
+  position: absolute;
+  top: 26%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+@-webkit-keyframes hover-button {
+  from {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+  to {
+    -webkit-box-shadow: 4px 3px 8px #424242;
+            box-shadow: 4px 3px 8px #424242;
+    -webkit-transform: translateX(-4px) translateY(-2px);
+            transform: translateX(-4px) translateY(-2px);
+    scale: 1.05;
+  }
+}
+
+@keyframes hover-button {
+  from {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+  to {
+    -webkit-box-shadow: 4px 3px 8px #424242;
+            box-shadow: 4px 3px 8px #424242;
+    -webkit-transform: translateX(-4px) translateY(-2px);
+            transform: translateX(-4px) translateY(-2px);
+    scale: 1.05;
+  }
+}
+
+@-webkit-keyframes unhover-button {
+  from {
+    -webkit-box-shadow: 4px 3px 8px #424242;
+            box-shadow: 4px 3px 8px #424242;
+    -webkit-transform: translateX(-4px) translateY(-2px);
+            transform: translateX(-4px) translateY(-2px);
+    scale: 1.05;
+  }
+  to {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+}
+
+@keyframes unhover-button {
+  from {
+    -webkit-box-shadow: 4px 3px 8px #424242;
+            box-shadow: 4px 3px 8px #424242;
+    -webkit-transform: translateX(-4px) translateY(-2px);
+            transform: translateX(-4px) translateY(-2px);
+    scale: 1.05;
+  }
+  to {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+}
+
+@-webkit-keyframes hover-box {
+  from {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+  to {
+    -webkit-box-shadow: 4px 4px 10px #424242;
+            box-shadow: 4px 4px 10px #424242;
+    -webkit-transform: translateX(-6px) translateY(-3px);
+            transform: translateX(-6px) translateY(-3px);
+    scale: 1.02;
+  }
+}
+
+@keyframes hover-box {
+  from {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+  to {
+    -webkit-box-shadow: 4px 4px 10px #424242;
+            box-shadow: 4px 4px 10px #424242;
+    -webkit-transform: translateX(-6px) translateY(-3px);
+            transform: translateX(-6px) translateY(-3px);
+    scale: 1.02;
+  }
+}
+
+@-webkit-keyframes unhover-box {
+  from {
+    -webkit-box-shadow: 4px 4px 10px #424242;
+            box-shadow: 4px 4px 10px #424242;
+    -webkit-transform: translateX(-6px) translateY(-3px);
+            transform: translateX(-6px) translateY(-3px);
+    scale: 1.02;
+  }
+  to {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+}
+
+@keyframes unhover-box {
+  from {
+    -webkit-box-shadow: 4px 4px 10px #424242;
+            box-shadow: 4px 4px 10px #424242;
+    -webkit-transform: translateX(-6px) translateY(-3px);
+            transform: translateX(-6px) translateY(-3px);
+    scale: 1.02;
+  }
+  to {
+    -webkit-box-shadow: 2px 2px 6px lightslategray;
+            box-shadow: 2px 2px 6px lightslategray;
+    -webkit-transform: translateX(0px) translateY(0px);
+            transform: translateX(0px) translateY(0px);
+    scale: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
