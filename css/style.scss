@@ -43,13 +43,16 @@ body {
                         animation: hover-button 1 .2s;
                     }
                 }
-                img {
+                img,
+                #player,
+                #computer {
                     width: calc(50px + 10vw);
                     height: calc(50px + 10vw);
                     box-shadow: 2px 2px 6px $gray-shadow;
                     transform: translateX(0px) translateY(0px);
                     scale: 1.02;
                     background-color: whitesmoke;
+                    background-size: contain;
                     animation: unhover-box 1 .2s;
                     &:hover {
                         box-shadow: 4px 4px 10px $hovered-shadow;
