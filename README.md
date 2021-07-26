@@ -7,6 +7,7 @@ It's simple, popular game where you can select one from three options (rock, pap
 2. paper win with rock, but lose with sicisors;
 3. sicisors win with paper, but lose with rock;
 4. the same option like sicisors vs sicisors it draw.
+
 There is also progress bar where you can track your progress. For every win you earn 100 points (it's 10% of progress bar). Every lost you lose 100 points. If you draw then nothing happens. After progress bar has -100% or 100% the game will be over.
 There is also table with details about current game. Table has 7 rows where you can track game history. Every move update table. Current move is saved with red color. 
 
